@@ -1,13 +1,13 @@
-## 服务器部署说明
+## 服务器部署说明（Docker Hub 镜像）
 
-本说明文档用于在服务器上使用 `docker-compose-alibaba.yml` 直接拉取镜像进行部署，无需本地构建镜像，所有配置通过 `.env.server` 文件管理。
+本说明文档用于在服务器上使用 `docker-compose.yml` 直接从 Docker Hub 拉取镜像进行部署，无需本地构建镜像，所有配置通过 `.env.server` 文件管理。
 
 ---
 
 ### 1. 前置条件
 
 - 服务器已安装 Docker 与 Docker Compose（`docker compose` 命令可用）
-- 能从服务器访问阿里云 Docker 镜像仓库
+- 能从服务器访问 Docker Hub 镜像仓库
 - 服务器已开放相关端口：80（前端）、3307（MySQL）、${SERVER_PORT}（后端，默认8080）
 
 ---
@@ -53,7 +53,7 @@ cd markdown_system
 #### 2.5 检查项目文件
 
 **重要提示：** 确保项目目录下包含以下文件和文件夹：
-- `docker-compose-alibaba.yml` - Docker Compose 配置文件
+- `docker-compose.yml` - Docker Compose 配置文件
 - `.env.server` - 环境变量配置文件
 - `sql/` - 数据库初始化脚本文件夹
 - `sql/markdown_system.sql` - 数据库初始化脚本
@@ -81,6 +81,7 @@ SERVER_PORT=8080
 
 # 文件上传配置
 FILE_MAX_SIZE=104857600
+```
 
 **配置说明：**
 
@@ -96,22 +97,22 @@ FILE_MAX_SIZE=104857600
 
 #### 4.1 首次启动
 
-首次启动会自动从阿里云镜像仓库拉取镜像并初始化数据库：
+首次启动会自动从 Docker Hub 拉取镜像并初始化数据库：
 
 ```bash
-docker compose -f docker-compose-alibaba.yml --env-file .env.server up -d
+docker compose -f docker-compose.yml --env-file .env.server up -d
 ```
 
 #### 4.2 重启服务
 
 ```bash
-docker compose -f docker-compose-alibaba.yml --env-file .env.server restart
+docker compose -f docker-compose.yml --env-file .env.server restart
 ```
 
 #### 4.3 停止服务
 
 ```bash
-docker compose -f docker-compose-alibaba.yml down
+docker compose -f docker-compose.yml down
 ```
 
 #### 4.4 重新拉取镜像并启动
@@ -119,8 +120,8 @@ docker compose -f docker-compose-alibaba.yml down
 如果镜像有更新，需要重新拉取：
 
 ```bash
-docker compose -f docker-compose-alibaba.yml --env-file .env.server pull
-docker compose -f docker-compose-alibaba.yml --env-file .env.server up -d
+docker compose -f docker-compose.yml --env-file .env.server pull
+docker compose -f docker-compose.yml --env-file .env.server up -d
 ```
 
 ---
@@ -155,7 +156,7 @@ docker compose -f docker-compose-alibaba.yml --env-file .env.server up -d
 #### 7.1 检查容器状态
 
 ```bash
-docker compose -f docker-compose-alibaba.yml ps
+docker compose -f docker-compose.yml ps
 ```
 
 所有服务的状态应该显示为 `Up`。
@@ -178,13 +179,18 @@ curl -I http://localhost
 
 ---
 
-### 8. 阿里云镜像仓库说明
+### 8. Docker Hub 镜像仓库说明
 
-本部署方法使用阿里云个人容器镜像仓库托管镜像：
+本部署方法使用 Docker Hub 公共镜像仓库托管镜像：
 
-- **镜像仓库地址**：`crpi-6bh4ttuwodcmagh8.cn-qingdao.personal.cr.aliyuncs.com/mifazhan/markdown-system`
-- **后端镜像**：`crpi-6bh4ttuwodcmagh8.cn-qingdao.personal.cr.aliyuncs.com/mifazhan/markdown-system:backend`
-- **前端镜像**：`crpi-6bh4ttuwodcmagh8.cn-qingdao.personal.cr.aliyuncs.com/mifazhan/markdown-system:frontend`
+- **Docker Hub 仓库地址**：`https://hub.docker.com/u/wwzxhy`
+- **后端镜像**：`wwzxhy/markdown_system:backend`
+- **前端镜像**：`wwzxhy/markdown_system:frontend`
 
-镜像会自动从阿里云仓库拉取，无需额外配置 Docker Hub。
+镜像会自动从 Docker Hub 拉取，无需额外配置镜像仓库。
+
+**注意：**
+- 如果服务器在中国大陆，访问 Docker Hub 可能较慢，可以考虑使用阿里云镜像仓库的部署方案（参考 `ALIBABA_SERVER_DEPLOY.md`）
+- 可以在服务器上配置 Docker 镜像加速器来加速拉取镜像
+
 

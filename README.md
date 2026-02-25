@@ -143,7 +143,9 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 
 - 📖 [前端 README](https://github.com/MiFaZhan/markdown_system_frontend/blob/main/README.md) - 前端项目详细说明
 - 📖 [后端 README](https://github.com/MiFaZhan/markdown_system_backend/blob/main/README.md) - 后端项目详细说明
-- 🚀 [服务器部署文档](ALIBABA_SERVER_DEPLOY.md) - Docker Compose 部署教程
+- 🚀 [Docker Hub 部署文档](DOCKER_HUB_DEPLOY.md) - 使用 Docker Hub 镜像部署教程
+- 🚀 [阿里云镜像部署文档](ALIBABA_SERVER_DEPLOY.md) - 使用阿里云镜像仓库部署教程
+- 🖥️ [Windows 本地部署文档](WINDOWS_LOCAL_DEPLOY.md) - Windows 本地 Docker Desktop 部署教程
 
 ## 仓库内容
 
@@ -151,17 +153,44 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 markdown_system/
 ├── sql/
 │   └── markdown_system.sql      # 数据库初始化脚本
+├── docker-compose.yml           # Docker Compose 配置（使用 Docker Hub 镜像）
 ├── docker-compose-alibaba.yml   # Docker Compose 配置（使用阿里云镜像）
 ├── .env.server                  # 服务器环境变量配置
-├── ALIBABA_SERVER_DEPLOY.md     # 详细部署文档
+├── DOCKER_HUB_DEPLOY.md         # Docker Hub 部署文档
+├── ALIBABA_SERVER_DEPLOY.md     # 阿里云镜像部署文档
+├── WINDOWS_LOCAL_DEPLOY.md      # Windows 本地部署文档
 └── README.md                    # 本文件
 ```
 
-## 部署说明
+## 部署
 
-本仓库提供了基于 Docker Compose 的一键部署方案，使用阿里云容器镜像仓库托管镜像，无需本地构建镜像，直接拉取即可部署。
+本仓库提供了基于 Docker Compose 的一键部署方案，支持两种镜像仓库，无需本地构建镜像，直接拉取即可部署：
 
-详细的部署教程请查看：[服务器部署说明](ALIBABA_SERVER_DEPLOY.md)
+### 部署方案选择
+
+#### 1. Docker Hub 部署（推荐国际用户）
+- 使用 Docker Hub 公共镜像仓库
+- 适合海外服务器或网络环境良好的用户
+- 部署文档：[Docker Hub 部署教程](DOCKER_HUB_DEPLOY.md)
+
+#### 2. 阿里云镜像部署（推荐国内用户）
+- 使用阿里云个人容器镜像仓库
+- 适合中国大陆服务器，访问速度更快
+- 部署文档：[阿里云镜像部署教程](ALIBABA_SERVER_DEPLOY.md)
+
+#### 3. Windows 本地部署（推荐开发测试）
+- 使用 Docker Desktop 在 Windows 本地部署
+- 适合开发、测试和个人使用
+- 部署文档：[Windows 本地部署教程](WINDOWS_LOCAL_DEPLOY.md)
+
+### 快速开始
+
+1. 克隆本仓库到服务器
+2. 根据网络环境选择合适的部署方案
+3. 配置 `.env.server` 环境变量文件
+4. 运行对应的 Docker Compose 命令启动服务
+
+详细部署教程请查看对应的部署文档。
 
 ## 许可证
 
