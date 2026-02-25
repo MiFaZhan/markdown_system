@@ -19,9 +19,9 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 内置搜索和筛选功能，快速定位项目
 - 完整的回收站机制，支持删除后恢复
 
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/3b9482ee-79b7-4068-a06f-f82ca4d619a1" />
+![项目管理卡片视图](https://github.com/user-attachments/assets/3b9482ee-79b7-4068-a06f-f82ca4d619a1)
 
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/2739a8f9-3056-4f05-b6e5-ef9e027450a5" />
+![项目管理列表视图](https://github.com/user-attachments/assets/2739a8f9-3056-4f05-b6e5-ef9e027450a5)
 
 
 
@@ -30,7 +30,7 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 实时大纲导航，快速跳转到文档任意位置
 - 图片拖拽上传和粘贴上传，编辑体验流畅
 
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/7cc0ae9e-4ffc-4e32-9893-4b3f38291a42" />
+![文档编辑](https://github.com/user-attachments/assets/7cc0ae9e-4ffc-4e32-9893-4b3f38291a42)
 
 **文件组织**
 - 树形目录结构，支持无限层级嵌套
@@ -39,7 +39,7 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 支持创建文件夹和 Markdown 文件
 - 文件重命名功能
 
-<img width="390" height="1392" alt="image" src="https://github.com/user-attachments/assets/a4e0f831-11c2-4544-857e-7e114f5b26dc" />
+![文件组织](https://github.com/user-attachments/assets/a4e0f831-11c2-4544-857e-7e114f5b26dc)
 
 
 **文档分享**
@@ -49,15 +49,13 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 独立的分享页面，无需登录即可访问
 - 分享链接管理，随时取消或更新
 
+![分享功能](https://github.com/user-attachments/assets/a23dbef9-5145-4559-bdaa-3c9b91eda72e)
 
+![密码保护](https://github.com/user-attachments/assets/58b42afe-3120-4410-abe0-9c8e1510d163)
 
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/a23dbef9-5145-4559-bdaa-3c9b91eda72e" />
+![过期时间设置](https://github.com/user-attachments/assets/e12cb5b7-e977-4645-806b-8ebc933e8652)
 
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/58b42afe-3120-4410-abe0-9c8e1510d163" />
-
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/e12cb5b7-e977-4645-806b-8ebc933e8652" />
-
-<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/03ce7952-abe3-46d0-8105-c98e0bde57fc" />
+![分享链接管理](https://github.com/user-attachments/assets/03ce7952-abe3-46d0-8105-c98e0bde57fc)
 
 
 
