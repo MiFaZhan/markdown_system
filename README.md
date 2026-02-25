@@ -19,13 +19,9 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 内置搜索和筛选功能，快速定位项目
 - 完整的回收站机制，支持删除后恢复
 
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/3b9482ee-79b7-4068-a06f-f82ca4d619a1" />
 
-
-![image-20260225161318351](images\image-20260225161318351.png)
-
-
-
-![image-20260225162022845](images\image-20260225162022845.png)
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/2739a8f9-3056-4f05-b6e5-ef9e027450a5" />
 
 
 
@@ -34,7 +30,7 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 实时大纲导航，快速跳转到文档任意位置
 - 图片拖拽上传和粘贴上传，编辑体验流畅
 
-![image-20260225170054990](images\image-20260225170054990.png)
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/7cc0ae9e-4ffc-4e32-9893-4b3f38291a42" />
 
 **文件组织**
 - 树形目录结构，支持无限层级嵌套
@@ -43,7 +39,8 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 支持创建文件夹和 Markdown 文件
 - 文件重命名功能
 
-![image-20260225170010942](images\image-20260225170010942.png)
+<img width="390" height="1392" alt="image" src="https://github.com/user-attachments/assets/a4e0f831-11c2-4544-857e-7e114f5b26dc" />
+
 
 **文档分享**
 - 支持分享项目、文件夹、单个文件
@@ -54,15 +51,13 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 
 
 
-![image-20260225161854158](images\image-20260225161854158.png)
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/a23dbef9-5145-4559-bdaa-3c9b91eda72e" />
 
-![image-20260225170155443](images\image-20260225170155443.png)
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/58b42afe-3120-4410-abe0-9c8e1510d163" />
 
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/e12cb5b7-e977-4645-806b-8ebc933e8652" />
 
-
-![image-20260225161838637](images\image-20260225161838637.png)
-
-![image-20260225170220105](images\image-20260225170220105.png)
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/03ce7952-abe3-46d0-8105-c98e0bde57fc" />
 
 
 
