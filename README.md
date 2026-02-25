@@ -39,7 +39,7 @@ Markdown System 旨在为个人和团队提供便捷的文档管理和协作平�
 - 支持创建文件夹和 Markdown 文件
 - 文件重命名功能
 
-![文件组织](https://github.com/user-attachments/assets/a4e0f831-11c2-4544-857e-7e114f5b26dc)
+![文件组织](https://github.com/user-attachments/assets/0a2ef191-01ff-4335-8888-d93b204c1cb4)
 
 
 **文档分享**
